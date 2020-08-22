@@ -6,11 +6,12 @@ Supervisor: Lianghao Han
 
 
 
-> Radiologists make the diagnoses of bone fractures through examining X-ray radiographs and document them in radiology reports.
-> Applying information extraction techniques on such radiology reports could yield a source of structured data for medical cohort studies, image labelling and decision support concerning bone fractures.
-> In this research, we demonstrate the applicability of the CheXpert-labeler[1] and CheXbert[2], two popular labellers originally designed for Chest X-ray radiology reports, to information extraction of radiology reports for bone fracture diagnosis.
-> We implement two kinds of information extraction systems and compare their performances on a dataset of 13,712 X-ray radiology reports and 4,899 annotations.
-> The BERT-based system, incorporating weak supervision from the CheXpert-labeller-based system, achieves 99.88% F1 score in the Assertion Classification subtask and 92.95% in the Named Entity Recognition subtask.
+> Radiologists make the diagnoses of bone fractures through examining X-ray radiographs and document them in radiology reports. Applying information extraction techniques on such radiology reports could yield a source of structured data for medical cohort studies, image labelling and decision support concerning bone fractures.
+>
+> In this research, we demonstrate the applicability of the CheXpert-labeler [1] and CheXbert [2], two popular labellers originally designed for Chest X-ray radiology reports, to information extraction of radiology reports for bone fracture diagnosis.
+>
+> We implement two kinds of information extraction systems and compare their performances on a dataset of 13,712 X-ray radiology reports and 4,899 annotations. The BERT-based system, incorporating weak supervision from the CheXpert-labeller-based system, achieves 99.88% F1 score in the Assertion Classification subtask and 92.95% in the Named Entity Recognition subtask.
+>
 > From a radiology report, the system extracts the assertion, type and location information corresponding to each mention of fracture in a structured format.
 
 
@@ -69,7 +70,7 @@ We are grateful for the authros of NegBio, CheXpert-labeller, and BlueBERT.
 
 > [1] Irvin, J., Rajpurkar, P., Ko, M., Yu, Y., Ciurea-Ilcus, S., Chute, C., Mark- lund, H., Haghgoo, B., Ball, R., Shpanskaya, K., Seekins, J., Mong, D. A., Halabi, S. S., Sandberg, J. K., Jones, R., Larson, D. B., Langlotz, C. P., Patel, B. N., Lungren, M. P., and Ng, A. Y. (2019). CheXpert: A Large Chest Radiograph Dataset with Uncertainty Labels and Expert Compari- son. Proceedings of the AAAI Conference on Artificial Intelligence, 33:590– 597.
 >
-> [2] Peng, Y., Wang, X., Lu, L., Bagheri, M., Summers, R., and Lu, Z. (2018). NegBio: a high-performance tool for negation and uncertainty detection in radiology reports. AMIA Joint Summits on Translational Science pro- ceedings. AMIA Joint Summits on Translational Science, 2017:188–196.
+> [2] Smit, A., Jain, S., Rajpurkar, P., Pareek, A., Ng, A. Y., and Lungren, M. P. (2020). CheXbert: Combining Automatic Labelers and Expert Annota- tions for Accurate Radiology Report Labeling Using BERT. arXiv preprint arXiv:2004.09167.
 
 
 
