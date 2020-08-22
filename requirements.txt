@@ -1,0 +1,7 @@
+tqdm==4.45.0
+nltk==3.5
+ply==3.11
+stanza==1.0.1
+pandas==1.0.3
+networkx==2.4
+bllipparser==2016.9.11

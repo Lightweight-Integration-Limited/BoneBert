@@ -1,0 +1,29 @@
+version: "2.3"
+services:
+  bluebert:
+    image: bluebert:local
+    build: .
+    volumes:
+      - ./run_bluebert_ner.py:/bluebert/bluebert/run_bluebert_ner.py
+      - ./data:/data
+      - ./output1:/output1
+      - ./output2:/output2
+    runtime: nvidia
+    environment:
+      - PYTHONPATH=.
+      - NVIDIA_VISIBLE_DEVICES=all
+    command:
+      - python
+      - bluebert/run_bluebert_ner.py
+      - --do_prepare=true
+      - --do_train=true
+      - --do_eval=true
+      - --do_predict=true
+      - --task_name=fracture
+      - --vocab_file=/model/vocab.txt
+      - --bert_config_file=/model/bert_config.json
+      - --init_checkpoint=/output1/model.ckpt-9645
+      - --num_train_epochs=30.0
+      - --do_lower_case=true
+      - --data_dir=/data/
+      - --output_dir=/output2/

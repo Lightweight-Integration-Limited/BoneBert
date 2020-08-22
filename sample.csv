@@ -1,0 +1,3 @@
+record_id,report_id,sentence_id,timestamp,clinical_information,order_item,sentence,1_PHRASE,1_ASSERTION,1_TYPE,1_BONE,1_BONE_PART,2_PHRASE,2_ASSERTION,2_TYPE,2_BONE,2_BONE_PART,3_PHRASE,3_ASSERTION,3_TYPE,3_BONE,3_BONE_PART
+cfd46bc2-2397-4b6f-b788-d5be355a0950,0,0,2016-06-19 13:56:00,?fracture,"XFOOR,XR Foot Rt",THere is an undislpalced oblique fracture of the big  toe proximal phalanx.,fracture,POSITIVE,undislpalced|oblique,big|toe,proximal|phalanx,,,,,,,,,,
+a9f91dfd-540a-49fc-9a20-dcce0eb09481,0,0,2016-06-19 09:49:00,,"XKNEL,XR Knee Lt",No fracture identified.,fracture,NEGATIVE,,,,,,,,,,,,,
