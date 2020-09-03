@@ -44,7 +44,7 @@ To use PERT's rule base, simply replace `post_negation_uncertainty_plus.txt` wit
 
 Before running the code, please ensure that you have a NVIDIA GPU with at least 8GB memory.
 
-1. Run `convert_to_blue.py` to convert all three sets from `csv` to `bert` format.
+1. Run `run_convert_to_blue.py` to convert all three sets from `csv` to `bert` format.
 
 2. For BLUE, run `docker-compose up` in the `blue` directory.
 
@@ -54,7 +54,7 @@ Before running the code, please ensure that you have a NVIDIA GPU with at least 
 
    Later, replace `docker-compose.yml` with `docker-compose.yml.2` and run the previous command again.
 
-4. For both models, run `analyse_blue.py` to convert results in `bert` format back to `csv`.
+4. For both models, run `run_analyse_blue.py` to convert results in `bert` format back to `csv`.
 
 
 
