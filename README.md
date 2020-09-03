@@ -2,7 +2,7 @@
 
 Author: Zhihao Dai
 
-Supervisor: Lianghao Han
+Supervisor: Dr. Lianghao Han
 
 
 
