@@ -56,17 +56,18 @@ $ nvidia-docker build -t bonebert .
 Start a container using the image just built.
 
 ```sh
-$ nvidia-docker run -t -d bonebert \
+$ nvidia-docker run -t -d \
 --env PYTHONPATH=. \
 --env NVIDIA_VISIBLE_DEVICES=all \
 --env MODEL_DIR=/model \
 --env DATA_DIR=/data \
 --env TRAIN_OUTPUT_DIR=/output_trian \
 --env FINETUNE_OUTPUT_DIR=/output_finetune \
---v ./bert/run_bluebert_ner.py:/bonebert/bluebert/run_bluebert_ner.py \
---v ./data:/data \
---v ./output_trian:/output_trian \
---v ./output_finetune:/output_finetune
+--mount type=bind,source=/$(pwd)/bert/run_bluebert_ner.py,target=/bonebert/bluebert/run_bluebert_ner.py \
+-v '/$(pwd)/data:/data' \
+-v '/$(pwd)/output_trian:/output_trian' \
+-v '/$(pwd)/output_finetune:/output_finetune' \
+bonebert
 ```
 
 #### 2. Manual

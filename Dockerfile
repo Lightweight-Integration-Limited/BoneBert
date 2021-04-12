@@ -15,3 +15,7 @@ RUN mkdir /model && cd /model/ \
 RUN git clone https://github.com/ncbi-nlp/bluebert.git tmp \
 	&& mv tmp/* . \
 	&& rm -r tmp
+
+ADD requirements.txt /
+RUN pip install --upgrade pip
+RUN pip install -r /requirements.txt
