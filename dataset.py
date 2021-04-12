@@ -3,7 +3,7 @@ from tqdm import tqdm
 from entity import Label
 
 def read_labels(dset, tokenizer):
-	df = pd.read_csv('data/annotated/'+dset+'.csv', dtype=str)
+	df = pd.read_csv('data/'+dset+'.csv', dtype=str)
 	df = df[~pd.isna(df['1_ASSERTION'])]
 	
 	labels = []

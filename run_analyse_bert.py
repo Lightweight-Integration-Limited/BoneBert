@@ -18,7 +18,7 @@ def find_bert_string(label, bert_strings):
 labels = transform_to_bert_format('test')
 
 # Read BERT output.
-with open('blueplus/output2/test_labels.txt', 'r') as f:
+with open('output_finetune/test_labels.txt', 'r') as f:
     bert_strings = f.read().split('\n\n')[:-1]
 print('Bert output mentions:', len(bert_strings))
 
@@ -60,4 +60,4 @@ for j, label in enumerate(labels):
 
 # Save to csv file.
 df = pd.DataFrame.from_records(records)
-df.to_csv('chexbert_plus.csv')
+df.to_csv('output_finetune/test.csv')

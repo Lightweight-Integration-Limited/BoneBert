@@ -43,9 +43,9 @@ Testing
 labels = read_labels('test', tokenizer)
 
 detector = Detector(
-    pre_negation_path="rules/pre_negation_uncertainty.txt", 
-    post_negation_path="rules/post_negation_uncertainty_plus.txt", 
-    negation_path="rules/negation_plus.txt"
+    pre_negation_path="rules/bonepert_plus/pre_negation_uncertainty.txt", 
+    post_negation_path="rules/bonepert_plus/post_negation_uncertainty.txt", 
+    negation_path="rules/bonepert_plus/negation.txt"
 )
 
 
@@ -75,5 +75,5 @@ for label in tqdm(labels):
 
 # Save results into csv file
 df = pd.DataFrame.from_records(records)
-df.to_csv('chexpert_plus.csv')
+df.to_csv('data/bonepert.csv')
 
