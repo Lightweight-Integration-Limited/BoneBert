@@ -61,11 +61,11 @@ $ nvidia-docker run -t -d \
 --env NVIDIA_VISIBLE_DEVICES=all \
 --env MODEL_DIR=/model \
 --env DATA_DIR=/data \
---env TRAIN_OUTPUT_DIR=/output_trian \
+--env TRAIN_OUTPUT_DIR=/output_train \
 --env FINETUNE_OUTPUT_DIR=/output_finetune \
 --mount type=bind,source=/$(pwd)/bert/run_bluebert_ner.py,target=/bonebert/bluebert/run_bluebert_ner.py \
 -v '/$(pwd)/data:/data' \
--v '/$(pwd)/output_trian:/output_trian' \
+-v '/$(pwd)/output_train:/output_train' \
 -v '/$(pwd)/output_finetune:/output_finetune' \
 bonebert
 ```
