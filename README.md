@@ -140,16 +140,14 @@ $ python run_analyse_bert.py
 
 ```
 @InProceedings{10.1007/978-3-030-74251-5_21,
-author="Dai, Zhihao
-and Li, Zhong
-and Han, Lianghao",
-title="BoneBert: A BERT-based Automated Information Extraction System of Radiology Reports for Bone Fracture Detection and Diagnosis",
-booktitle="Advances in Intelligent Data Analysis XIX",
-year="2021",
-publisher="Springer International Publishing",
-address="Cham",
-pages="263--274",
-isbn="978-3-030-74251-5"
+  author="Dai, Zhihao and Li, Zhong and Han, Lianghao",
+  title="BoneBert: A BERT-based Automated Information Extraction System of Radiology Reports for Bone Fracture Detection and Diagnosis",
+  booktitle="Advances in Intelligent Data Analysis XIX",
+  year="2021",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="263--274",
+  isbn="978-3-030-74251-5"
 }
 ```
 
