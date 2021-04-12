@@ -136,7 +136,7 @@ $ python run_analyse_bert.py
 
 ## Citing BoneBert
 
-- Dai, Z., Z. Li and L. Han (2021). [BoneBert: A BERT-based Automated Information Extraction System of Radiology Reports for Bone Fracture Detection and Diagnosis](https://link.springer.com/chapter/10.1007%2F978-3-030-74251-5_21). Advances in Intelligent Data Analysis XIX, Cham, Springer International Publishing
+- Dai Z., Li Z., Han L. (2021) [BoneBert: A BERT-based Automated Information Extraction System of Radiology Reports for Bone Fracture Detection and Diagnosis](https://link.springer.com/chapter/10.1007%2F978-3-030-74251-5_21). In: Abreu P.H., Rodrigues P.P., Fernández A., Gama J. (eds) Advances in Intelligent Data Analysis XIX. IDA 2021. Lecture Notes in Computer Science, vol 12695. Springer, Cham. https://doi.org/10.1007/978-3-030-74251-5_21
 
 ```
 @InProceedings{10.1007/978-3-030-74251-5_21,
